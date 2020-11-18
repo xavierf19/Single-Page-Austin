@@ -1,0 +1,274 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Type */
+
+body {
+    color: #000;
+    margin: 0;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 8rem;
+    color: rgb(255,255,255, 1);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 0;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+h2 {
+    font-size: 3.3125em;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom:.5em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.25em;
+    color: #48525c;
+    line-height:1.2;
+    margin-bottom: 1.7em; 
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 85%;
+    margin: auto;
+    max-width: 1050px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .5em;
+}
+ 
+/* pseudo Class */
+
+a:link {
+    color: green;
+    text-decoration: none;
+ 
+}
+
+a:visited { 
+    color: lightgreen;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: green;
+}
+
+a:focus {
+    color: black;
+}
+
+/* Class Selectors */
+
+.main-header {
+    padding-top:170px; 
+    height: 600px;
+    background: linear-gradient(0deg, #fff, transparent),
+                orange url('../Images/Austin\ 1.jpg') no-repeat center / 
+    cover;
+}
+
+.title {
+    color: white;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #ffffff;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.intro {
+    font-size: 1.25em;
+    line-height: 1.6
+}
+
+.primary-content,
+.main-header, 
+.main-footer {
+        text-align: center;
+}
+
+.primary-content {
+    padding-top: 25px;
+    padding-bottom: 95px;
+    width: 85%;
+    padding-left: 50px; 
+    padding-right: 50px;
+    margin: auto;
+    max-width: 1050px;
+}
+
+.secondary-content {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    width: 85%; /* 75 */
+    padding-left: 50px; 
+    padding-right: 50px;
+    margin: auto;
+    max-width: 1050px; /* 900 */
+    overflow: auto;
+}
+
+.callout { 
+    font-size: 1.25em;
+    border: 3px solid;
+    padding: 0 9px 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 10px solid green
+}
+
+.t-border {
+    border-top: 2px solid #000;
+}
+
+.bbp {
+    border-bottom: 2px solid #000;
+}
+
+.ima {
+    border-radius: 15px 50px;
+}
+
+/*
+
+.wildlife {
+    color: white;
+    background-color: #434a52;
+    padding: 18% 24%;
+    border: 10px solid green;
+    margin: 150px 0 60px;
+    background: green url('../Images/Austin4.jpg') no-repeat center / cover;
+}
+*/
+
+.youshould,
+.youshouldnot {
+    width: 46.5%
+}
+
+.youshould {
+    float: left;
+}
+
+.youshouldnot {
+    float: right;
+}
+
+.youshould1,
+.youshouldnot1 {
+    width: 46.5%
+}
+
+.youshould1 {
+    float: left;
+}
+
+.youshouldnot1 {
+    float: right;
+}
+
+.youshould2,
+.youshouldnot2 {
+    width: 46.5%
+}
+
+.youshould2 {
+    float: left;
+}
+
+.youshouldnot2 {
+    float: right;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 1180) {
+    .primary-content,
+    .secondary-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 858px) {
+    .primary-content,
+    .secondary-content {
+        width: 90%;
+        padding: 20px;
+        border: none;
+    }
+
+    .main-header {
+        max-height: 470px;
+        padding: 50px 25px 0;
+    }
+
+    .title: {
+        font-size: 1.3rem;
+        border: none;
+    }
+
+    h1 {
+        font-size: 1.5 rem;
+        border: none;
+    }
+
+    .youshould,
+    .youshouldnot,
+    .youshould1,
+    .youshouldnot1,
+    .youshould2,
+    .youshouldnot2 {
+        float: none;
+        width: 100%;
+    }
+}
